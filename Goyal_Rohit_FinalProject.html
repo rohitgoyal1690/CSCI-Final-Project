@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Google Maps</title>
+    <link href="Styles/mapSize.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Styles/bootstrap.min.css">
+  </head>
+  <body>
+  <div class="container">
+    <header>
+      <form id="mapform" action='' method="post">
+        <fieldset>
+          <label for="latitude">Latitude<em>(-90 - 90)</em></label>
+          <input id="latitude" type="number" name="latitude" value="0">
+          <label for="longitude">Longitude<em>(-180 - 180)</em></em></label>
+          <input id="longitude" type="number" name="longitude" value="0">
+          <input id="submit" type="submit" value="Mark" >
+        </fieldset>
+      </form>
+    </header>
+    <div id="googleMap"></div>  
+  </div>
+  <h1 id="clockDisplay"></h1>
+
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="Scripts/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+  <script type="text/javascript" src="Scripts/googleMaps.js"></script>
+
+  </body>
+</html>
